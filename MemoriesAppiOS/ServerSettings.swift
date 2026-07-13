@@ -28,7 +28,8 @@ struct ServerSettings {
         return components?.url ?? baseURL.appendingPathComponent(trimmedPath)
     }
 
+    // No default server — the user configures one on first launch.
     static var defaultServerURL: String {
-        "https://memories.monkmonk.net"
+        ""
     }
 }

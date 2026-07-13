@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memories App Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #28748f;
+      --paper: #f7f1e7;
+      --ink: #192322;
+      --muted: #5d6a68;
+      --line: #d8ccbb;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(160deg, #f7f1e7 0%, #d9e6e3 100%);
+      color: var(--ink);
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    header {
+      padding: 32px 0 26px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 34px 0 12px;
+      font-size: 1.35rem;
+    }
+    p, li {
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+    .lede {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .panel {
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid rgba(216, 204, 187, 0.9);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    footer {
+      margin-top: 42px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #17201f;
+        --ink: #f3efe7;
+        --muted: #b4c1bd;
+        --line: #33423f;
+        --accent: #8ccfe0;
+      }
+      body {
+        background: linear-gradient(160deg, #17201f 0%, #203b3b 100%);
+      }
+      .panel {
+        background: rgba(12, 18, 18, 0.55);
+        border-color: rgba(86, 110, 105, 0.7);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Memories Support</h1>
+      <p class="lede">Support information for the Memories iPhone and iPad app, a companion client for a self-hosted Family Memories server.</p>
+    </header>
+
+    <section>
+      <h2>Getting Started</h2>
+      <div class="panel">
+        <p>Memories requires access to a compatible Family Memories server. Open the app, add a saved server profile, sign in with the account created by the server administrator, and use the app menu to open Home, Add Media, Needs Details, Guide, or Admin.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Common Issues</h2>
+      <div class="grid">
+        <div class="panel">
+          <h3>Cannot Connect</h3>
+          <p>Confirm the server URL is correct, starts with <code>https://</code>, and opens in Safari on the same device.</p>
+        </div>
+        <div class="panel">
+          <h3>Cannot Sign In</h3>
+          <p>Ask the Memories server administrator to confirm that your account is active and approved. If the site uses HTTP Basic or Digest authentication, confirm the saved username and password in Server Settings.</p>
+        </div>
+        <div class="panel">
+          <h3>Upload Problems</h3>
+          <p>Allow Photos, Camera, or Microphone access when prompted. Large videos may take time to upload depending on the network.</p>
+        </div>
+        <div class="panel">
+          <h3>Missing Media</h3>
+          <p>Use the server's search filters or Needs Details page. Some media may require permission from the server administrator.</p>
+        </div>
+        <div class="panel">
+          <h3>Wrong Server Opens</h3>
+          <p>Open Server Settings, select the desired saved server, and use the Home shortcut to reload that server.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="panel">
+        <p>For app support, open an issue in the GitHub repository:</p>
+        <p><a href="https://github.com/jlrosssc/MemoriesAppiOS/issues">github.com/jlrosssc/MemoriesAppiOS/issues</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <div class="panel">
+        <p>Read the app privacy summary here:</p>
+        <p><a href="privacy.html">Memories Privacy Policy</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>MemoriesAppiOS is an independent companion app for a self-hosted Family Memories server.</p>
+    </footer>
+  </main>
+</body>
+</html>

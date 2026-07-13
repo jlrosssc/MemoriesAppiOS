@@ -27,10 +27,12 @@ final class BrowserState: ObservableObject {
     }
 
     func update(from webView: WKWebView) {
-        currentURL = webView.url
-        estimatedProgress = webView.estimatedProgress
-        isLoading = webView.isLoading
-        canGoBack = webView.canGoBack
-        canGoForward = webView.canGoForward
+        // Only publish values that actually changed, so redundant delegate/KVO
+        // callbacks don't trigger needless SwiftUI view updates.
+        if currentURL != webView.url { currentURL = webView.url }
+        if estimatedProgress != webView.estimatedProgress { estimatedProgress = webView.estimatedProgress }
+        if isLoading != webView.isLoading { isLoading = webView.isLoading }
+        if canGoBack != webView.canGoBack { canGoBack = webView.canGoBack }
+        if canGoForward != webView.canGoForward { canGoForward = webView.canGoForward }
     }
 }
