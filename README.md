@@ -24,6 +24,12 @@ The current server exposes its viewing, editing, upload, login, and admin workfl
 
 The app does not ship with a default server. On first launch, enter the HTTPS URL for the Family Memories server you operate.
 
+## Support and Privacy
+
+- Support: https://jlrosssc.github.io/MemoriesAppiOS/
+- Privacy policy: https://jlrosssc.github.io/MemoriesAppiOS/privacy.html
+- GitHub privacy policy copy: [PRIVACY.md](PRIVACY.md)
+
 ## Project
 
 - Open `MemoriesAppiOS.xcodeproj` in Xcode.
