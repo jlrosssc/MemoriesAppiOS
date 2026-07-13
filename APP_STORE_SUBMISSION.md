@@ -61,6 +61,7 @@ Use the current repository version as the submission baseline.
 Confirm these statements against the deployed server before answering App Store privacy questions.
 
 - The iOS app stores saved server names, URLs, and usernames locally in app storage.
+- Server connections must use HTTPS.
 - Optional saved passwords are stored in the iOS Keychain.
 - The WebKit view may store server cookies/session data locally if the user signs in.
 - Media selected for upload is sent only to the configured Memories server.
@@ -92,6 +93,7 @@ If the server logs IP addresses, account activity, uploaded media, or profile da
 - Test saved server creation, selection, editing, and deletion.
 - Test an account/server that uses HTTP Basic or Digest authentication if that setup is expected in production.
 - Confirm camera/photo/microphone prompts are accurate.
+- Confirm the review server uses a valid HTTPS certificate.
 - Confirm the support and privacy URLs load publicly without authentication.
 
 ## Useful Apple Resources

@@ -308,7 +308,7 @@ struct ContentView: View {
     @discardableResult
     private func saveDraftServer(selectAfterSaving: Bool) -> Bool {
         guard let normalizedURL = ServerSettings.normalizedServerURL(from: draftServerURL) else {
-            validationMessage = "Enter a valid server URL."
+            validationMessage = "Enter a valid HTTPS server URL."
             return false
         }
 

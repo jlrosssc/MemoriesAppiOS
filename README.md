@@ -6,7 +6,7 @@ The current server exposes its viewing, editing, upload, login, and admin workfl
 
 ## Features
 
-- Save and normalize the Memories server URL.
+- Save and normalize the Memories server HTTPS URL.
 - Browse the Memories home/search page.
 - Open common server routes from a native menu:
   - Home
@@ -20,15 +20,9 @@ The current server exposes its viewing, editing, upload, login, and admin workfl
 - Edit memory details through the server's existing edit forms.
 - Share the current page URL from iOS.
 
-## Default Server
+## Server Setup
 
-The app defaults to:
-
-```text
-https://memories.monkmonk.net
-```
-
-Change this in Server Settings if the server moves or is installed under another URL/path.
+The app does not ship with a default server. On first launch, enter the HTTPS URL for the Family Memories server you operate.
 
 ## Project
 

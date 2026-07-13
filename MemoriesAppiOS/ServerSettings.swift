@@ -13,7 +13,7 @@ struct ServerSettings {
             value.removeLast()
         }
 
-        guard let url = URL(string: value), url.host != nil else { return nil }
+        guard let url = URL(string: value), url.host != nil, url.scheme?.lowercased() == "https" else { return nil }
         return url
     }
 
